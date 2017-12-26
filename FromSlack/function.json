@@ -1,0 +1,27 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "route": "FromSlack",
+      "methods": [
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "queue",
+      "name": "outputQueueItem",
+      "queueName": "fromslackqueue",
+      "connection": "matcubot8930_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

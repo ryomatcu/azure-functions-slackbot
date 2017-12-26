@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "fromslackqueue",
+      "connection": "matcubot8930_STORAGE"
+    },
+    {
+      "type": "queue",
+      "name": "outputQueueItem",
+      "queueName": "fromuserlocalqueue",
+      "connection": "matcubot8930_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
