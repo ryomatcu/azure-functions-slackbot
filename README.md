@@ -13,3 +13,5 @@ The below items are required
 
 See also [Azure Functionsでお手軽Slack Bot](http://matcu.hatenablog.com/entry/2017/12/17/061717)
 
+
+Slack -> Function(FromSlack) -> Queue -> Function(FromSlackQueue) -> UserLocal API -> Queue -> Function(SendMessageToSlack) -> Slack
